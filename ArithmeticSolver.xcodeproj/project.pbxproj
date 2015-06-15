@@ -305,6 +305,7 @@
 				7CC8FFF31B2B9A68002BB768 /* Frameworks */,
 				7CC8FFF41B2B9A68002BB768 /* Resources */,
 				7CC800281B2B9CB8002BB768 /* CopyFiles */,
+				7CF63B7B1B2F2DE600C0FCB2 /* Strip x86_64 Symbols */,
 			);
 			buildRules = (
 			);
@@ -374,6 +375,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CF63B7B1B2F2DE600C0FCB2 /* Strip x86_64 Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TableAdapter.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			name = "Strip x86_64 Symbols";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CC800071B2B9A68002BB768 /* Sources */ = {
