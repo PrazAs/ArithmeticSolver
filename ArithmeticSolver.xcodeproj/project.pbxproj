@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CC800011B2B9A68002BB768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8FFFF1B2B9A68002BB768 /* Main.storyboard */; };
+		7CC800031B2B9A68002BB768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC800021B2B9A68002BB768 /* Images.xcassets */; };
+		7CC800061B2B9A68002BB768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC800041B2B9A68002BB768 /* LaunchScreen.xib */; };
+		7CC800121B2B9A68002BB768 /* ArithmeticSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800111B2B9A68002BB768 /* ArithmeticSolverTests.swift */; };
+		7CC800221B2B9B1F002BB768 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7CC800211B2B9B1F002BB768 /* Cartfile */; };
+		7CC800261B2B9C9E002BB768 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC800241B2B9C9E002BB768 /* ReactiveCocoa.framework */; };
+		7CC800271B2B9C9E002BB768 /* TableAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC800251B2B9C9E002BB768 /* TableAdapter.framework */; };
+		7CC800291B2B9CBF002BB768 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7CC800241B2B9C9E002BB768 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CC8002A1B2B9CBF002BB768 /* TableAdapter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7CC800251B2B9C9E002BB768 /* TableAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CC800301B2B9DEB002BB768 /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8002D1B2B9DEB002BB768 /* RAC.swift */; };
+		7CC800311B2B9DEB002BB768 /* RACSignalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8002E1B2B9DEB002BB768 /* RACSignalExtensions.swift */; };
+		7CC800321B2B9DEB002BB768 /* RACStreamExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8002F1B2B9DEB002BB768 /* RACStreamExtensions.swift */; };
+		7CC800351B2B9E62002BB768 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800341B2B9E62002BB768 /* Operator.swift */; };
+		7CC800371B2B9E79002BB768 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800361B2B9E79002BB768 /* Operation.swift */; };
+		7CC800391B2B9E97002BB768 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800381B2B9E97002BB768 /* Solution.swift */; };
+		7CC8003B1B2B9EDB002BB768 /* MathSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8003A1B2B9EDB002BB768 /* MathSolver.swift */; };
+		7CC8FFFC1B2B9A68002BB768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8FFFB1B2B9A68002BB768 /* AppDelegate.swift */; };
+		7CF63B6C1B2F0DA400C0FCB2 /* ArithmeticSolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B6A1B2F0DA400C0FCB2 /* ArithmeticSolverViewController.swift */; };
+		7CF63B6D1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B6B1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift */; };
+		7CF63B701B2F167300C0FCB2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B6F1B2F167300C0FCB2 /* StringExtensions.swift */; };
+		7CF63B731B2F1B1900C0FCB2 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B721B2F1B1900C0FCB2 /* StepCell.swift */; };
+		7CF63B751B2F1BBA00C0FCB2 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC8000C1B2B9A68002BB768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC8FFEE1B2B9A68002BB768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC8FFF51B2B9A68002BB768;
+			remoteInfo = ArithmeticSolver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CC800281B2B9CB8002BB768 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7CC800291B2B9CBF002BB768 /* ReactiveCocoa.framework in CopyFiles */,
+				7CC8002A1B2B9CBF002BB768 /* TableAdapter.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7CC800001B2B9A68002BB768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CC800021B2B9A68002BB768 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7CC800051B2B9A68002BB768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CC8000B1B2B9A68002BB768 /* ArithmeticSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArithmeticSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC800101B2B9A68002BB768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC800111B2B9A68002BB768 /* ArithmeticSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticSolverTests.swift; sourceTree = "<group>"; };
+		7CC800211B2B9B1F002BB768 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		7CC800241B2B9C9E002BB768 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
+		7CC800251B2B9C9E002BB768 /* TableAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TableAdapter.framework; path = Carthage/Build/iOS/TableAdapter.framework; sourceTree = SOURCE_ROOT; };
+		7CC8002D1B2B9DEB002BB768 /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
+		7CC8002E1B2B9DEB002BB768 /* RACSignalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACSignalExtensions.swift; sourceTree = "<group>"; };
+		7CC8002F1B2B9DEB002BB768 /* RACStreamExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACStreamExtensions.swift; sourceTree = "<group>"; };
+		7CC800341B2B9E62002BB768 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operator.swift; path = Models/Operator.swift; sourceTree = "<group>"; };
+		7CC800361B2B9E79002BB768 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Models/Operation.swift; sourceTree = "<group>"; };
+		7CC800381B2B9E97002BB768 /* Solution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solution.swift; path = Models/Solution.swift; sourceTree = "<group>"; };
+		7CC8003A1B2B9EDB002BB768 /* MathSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MathSolver.swift; path = Controllers/MathSolver/MathSolver.swift; sourceTree = "<group>"; };
+		7CC8FFF61B2B9A68002BB768 /* ArithmeticSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8FFFA1B2B9A68002BB768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8FFFB1B2B9A68002BB768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CF63B6A1B2F0DA400C0FCB2 /* ArithmeticSolverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSolverViewController.swift; sourceTree = "<group>"; };
+		7CF63B6B1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSolverViewModel.swift; sourceTree = "<group>"; };
+		7CF63B6F1B2F167300C0FCB2 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Extensions/Foundation/StringExtensions.swift; sourceTree = "<group>"; };
+		7CF63B721B2F1B1900C0FCB2 /* StepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCell.swift; path = Views/StepTableViewCell/StepCell.swift; sourceTree = "<group>"; };
+		7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StepCell.xib; path = Views/StepTableViewCell/StepCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC800081B2B9A68002BB768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8FFF31B2B9A68002BB768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC800261B2B9C9E002BB768 /* ReactiveCocoa.framework in Frameworks */,
+				7CC800271B2B9C9E002BB768 /* TableAdapter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC8000E1B2B9A68002BB768 /* ArithmeticSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC800111B2B9A68002BB768 /* ArithmeticSolverTests.swift */,
+				7CC8000F1B2B9A68002BB768 /* Supporting Files */,
+			);
+			path = ArithmeticSolverTests;
+			sourceTree = "<group>";
+		};
+		7CC8000F1B2B9A68002BB768 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CC800101B2B9A68002BB768 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CC8001C1B2B9AAD002BB768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CC800341B2B9E62002BB768 /* Operator.swift */,
+				7CC800361B2B9E79002BB768 /* Operation.swift */,
+				7CC800381B2B9E97002BB768 /* Solution.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7CC8001D1B2B9AB1002BB768 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B711B2F1AFC00C0FCB2 /* StepCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7CC8001F1B2B9AC1002BB768 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B691B2F0DA400C0FCB2 /* ArithmeticSolver */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7CC800201B2B9AC7002BB768 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8FFFB1B2B9A68002BB768 /* AppDelegate.swift */,
+				7CC800331B2B9E4B002BB768 /* MathSolver */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7CC800231B2B9C91002BB768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC800241B2B9C9E002BB768 /* ReactiveCocoa.framework */,
+				7CC800251B2B9C9E002BB768 /* TableAdapter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC8002B1B2B9DE4002BB768 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B6E1B2F166300C0FCB2 /* Foundation */,
+				7CC8002C1B2B9DEB002BB768 /* ReactiveCocoa */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7CC8002C1B2B9DEB002BB768 /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8002D1B2B9DEB002BB768 /* RAC.swift */,
+				7CC8002E1B2B9DEB002BB768 /* RACSignalExtensions.swift */,
+				7CC8002F1B2B9DEB002BB768 /* RACStreamExtensions.swift */,
+			);
+			name = ReactiveCocoa;
+			path = Extensions/ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		7CC800331B2B9E4B002BB768 /* MathSolver */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8003A1B2B9EDB002BB768 /* MathSolver.swift */,
+			);
+			name = MathSolver;
+			sourceTree = "<group>";
+		};
+		7CC8FFED1B2B9A68002BB768 = {
+			isa = PBXGroup;
+			children = (
+				7CC8FFF81B2B9A68002BB768 /* ArithmeticSolver */,
+				7CC8000E1B2B9A68002BB768 /* ArithmeticSolverTests */,
+				7CC8FFF71B2B9A68002BB768 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC8FFF71B2B9A68002BB768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8FFF61B2B9A68002BB768 /* ArithmeticSolver.app */,
+				7CC8000B1B2B9A68002BB768 /* ArithmeticSolverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC8FFF81B2B9A68002BB768 /* ArithmeticSolver */ = {
+			isa = PBXGroup;
+			children = (
+				7CC800201B2B9AC7002BB768 /* Controllers */,
+				7CC8002B1B2B9DE4002BB768 /* Extensions */,
+				7CC8001F1B2B9AC1002BB768 /* ViewControllers */,
+				7CC8001D1B2B9AB1002BB768 /* Views */,
+				7CC8001C1B2B9AAD002BB768 /* Models */,
+				7CC8FFF91B2B9A68002BB768 /* Supporting Files */,
+				7CC800231B2B9C91002BB768 /* Frameworks */,
+			);
+			path = ArithmeticSolver;
+			sourceTree = "<group>";
+		};
+		7CC8FFF91B2B9A68002BB768 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8FFFF1B2B9A68002BB768 /* Main.storyboard */,
+				7CC800021B2B9A68002BB768 /* Images.xcassets */,
+				7CC800041B2B9A68002BB768 /* LaunchScreen.xib */,
+				7CC8FFFA1B2B9A68002BB768 /* Info.plist */,
+				7CC800211B2B9B1F002BB768 /* Cartfile */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CF63B691B2F0DA400C0FCB2 /* ArithmeticSolver */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B6A1B2F0DA400C0FCB2 /* ArithmeticSolverViewController.swift */,
+				7CF63B6B1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift */,
+			);
+			name = ArithmeticSolver;
+			path = ViewControllers/ArithmeticSolver;
+			sourceTree = "<group>";
+		};
+		7CF63B6E1B2F166300C0FCB2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B6F1B2F167300C0FCB2 /* StringExtensions.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		7CF63B711B2F1AFC00C0FCB2 /* StepCell */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B721B2F1B1900C0FCB2 /* StepCell.swift */,
+				7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */,
+			);
+			name = StepCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CC8000A1B2B9A68002BB768 /* ArithmeticSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC800181B2B9A68002BB768 /* Build configuration list for PBXNativeTarget "ArithmeticSolverTests" */;
+			buildPhases = (
+				7CC800071B2B9A68002BB768 /* Sources */,
+				7CC800081B2B9A68002BB768 /* Frameworks */,
+				7CC800091B2B9A68002BB768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC8000D1B2B9A68002BB768 /* PBXTargetDependency */,
+			);
+			name = ArithmeticSolverTests;
+			productName = ArithmeticSolverTests;
+			productReference = 7CC8000B1B2B9A68002BB768 /* ArithmeticSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CC8FFF51B2B9A68002BB768 /* ArithmeticSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC800151B2B9A68002BB768 /* Build configuration list for PBXNativeTarget "ArithmeticSolver" */;
+			buildPhases = (
+				7CC8FFF21B2B9A68002BB768 /* Sources */,
+				7CC8FFF31B2B9A68002BB768 /* Frameworks */,
+				7CC8FFF41B2B9A68002BB768 /* Resources */,
+				7CC800281B2B9CB8002BB768 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArithmeticSolver;
+			productName = ArithmeticSolver;
+			productReference = 7CC8FFF61B2B9A68002BB768 /* ArithmeticSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC8FFEE1B2B9A68002BB768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Tabtor;
+				TargetAttributes = {
+					7CC8000A1B2B9A68002BB768 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 7CC8FFF51B2B9A68002BB768;
+					};
+					7CC8FFF51B2B9A68002BB768 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 7CC8FFF11B2B9A68002BB768 /* Build configuration list for PBXProject "ArithmeticSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC8FFED1B2B9A68002BB768;
+			productRefGroup = 7CC8FFF71B2B9A68002BB768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC8FFF51B2B9A68002BB768 /* ArithmeticSolver */,
+				7CC8000A1B2B9A68002BB768 /* ArithmeticSolverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CC800091B2B9A68002BB768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8FFF41B2B9A68002BB768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC800011B2B9A68002BB768 /* Main.storyboard in Resources */,
+				7CF63B751B2F1BBA00C0FCB2 /* StepCell.xib in Resources */,
+				7CC800061B2B9A68002BB768 /* LaunchScreen.xib in Resources */,
+				7CC800221B2B9B1F002BB768 /* Cartfile in Resources */,
+				7CC800031B2B9A68002BB768 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC800071B2B9A68002BB768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC800121B2B9A68002BB768 /* ArithmeticSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8FFF21B2B9A68002BB768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC800321B2B9DEB002BB768 /* RACStreamExtensions.swift in Sources */,
+				7CC800371B2B9E79002BB768 /* Operation.swift in Sources */,
+				7CC800351B2B9E62002BB768 /* Operator.swift in Sources */,
+				7CC800311B2B9DEB002BB768 /* RACSignalExtensions.swift in Sources */,
+				7CC800301B2B9DEB002BB768 /* RAC.swift in Sources */,
+				7CF63B6D1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift in Sources */,
+				7CF63B701B2F167300C0FCB2 /* StringExtensions.swift in Sources */,
+				7CF63B6C1B2F0DA400C0FCB2 /* ArithmeticSolverViewController.swift in Sources */,
+				7CC800391B2B9E97002BB768 /* Solution.swift in Sources */,
+				7CF63B731B2F1B1900C0FCB2 /* StepCell.swift in Sources */,
+				7CC8003B1B2B9EDB002BB768 /* MathSolver.swift in Sources */,
+				7CC8FFFC1B2B9A68002BB768 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CC8000D1B2B9A68002BB768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC8FFF51B2B9A68002BB768 /* ArithmeticSolver */;
+			targetProxy = 7CC8000C1B2B9A68002BB768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CC800041B2B9A68002BB768 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC800051B2B9A68002BB768 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7CC8FFFF1B2B9A68002BB768 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC800001B2B9A68002BB768 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CC800131B2B9A68002BB768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC800141B2B9A68002BB768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC800161B2B9A68002BB768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ArithmeticSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CC800171B2B9A68002BB768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ArithmeticSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CC800191B2B9A68002BB768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArithmeticSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArithmeticSolver.app/ArithmeticSolver";
+			};
+			name = Debug;
+		};
+		7CC8001A1B2B9A68002BB768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArithmeticSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArithmeticSolver.app/ArithmeticSolver";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC800151B2B9A68002BB768 /* Build configuration list for PBXNativeTarget "ArithmeticSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC800161B2B9A68002BB768 /* Debug */,
+				7CC800171B2B9A68002BB768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC800181B2B9A68002BB768 /* Build configuration list for PBXNativeTarget "ArithmeticSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC800191B2B9A68002BB768 /* Debug */,
+				7CC8001A1B2B9A68002BB768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC8FFF11B2B9A68002BB768 /* Build configuration list for PBXProject "ArithmeticSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC800131B2B9A68002BB768 /* Debug */,
+				7CC800141B2B9A68002BB768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CC8FFEE1B2B9A68002BB768 /* Project object */;
+}

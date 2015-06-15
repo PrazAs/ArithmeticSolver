@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Arithmetic Solver View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ArithmeticSolverViewController" customModule="ArithmeticSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example: 2 * 4 + 3" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="49b-pO-waf">
+                                <rect key="frame" x="16" y="63" width="522" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KE-Vs-9WW">
+                                <rect key="frame" x="546" y="64" width="38" height="30"/>
+                                <state key="normal" title="Solve">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arithmetic Expression" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPU-lW-Qkq">
+                                <rect key="frame" x="16" y="35" width="167.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="82W-NV-647">
+                                <rect key="frame" x="0.0" y="150" width="600" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIA-1J-reP">
+                                <rect key="frame" x="16" y="121" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="82W-NV-647" firstAttribute="top" secondItem="DIA-1J-reP" secondAttribute="bottom" constant="8" id="4u7-ff-cfx"/>
+                            <constraint firstItem="xPU-lW-Qkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="7P9-4R-7xf"/>
+                            <constraint firstItem="5KE-Vs-9WW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DSQ-w8-MlM"/>
+                            <constraint firstItem="DIA-1J-reP" firstAttribute="top" secondItem="49b-pO-waf" secondAttribute="bottom" constant="28" id="Fbd-1v-Ioe"/>
+                            <constraint firstItem="xPU-lW-Qkq" firstAttribute="leading" secondItem="DIA-1J-reP" secondAttribute="leading" id="H3P-Lc-4i6"/>
+                            <constraint firstItem="xPU-lW-Qkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LJe-yt-ajR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="82W-NV-647" secondAttribute="bottom" id="MjT-DV-ENp"/>
+                            <constraint firstAttribute="trailing" secondItem="82W-NV-647" secondAttribute="trailing" id="Qwg-Yv-kgd"/>
+                            <constraint firstItem="82W-NV-647" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RhZ-J7-Ljw"/>
+                            <constraint firstItem="49b-pO-waf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pC5-jt-IH6"/>
+                            <constraint firstItem="49b-pO-waf" firstAttribute="top" secondItem="xPU-lW-Qkq" secondAttribute="bottom" constant="8" id="rdm-RQ-49N"/>
+                            <constraint firstItem="5KE-Vs-9WW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="uoa-AU-Bv0"/>
+                            <constraint firstItem="5KE-Vs-9WW" firstAttribute="leading" secondItem="49b-pO-waf" secondAttribute="trailing" constant="8" id="we8-h6-g2M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="expressionTextField" destination="49b-pO-waf" id="1l1-Il-VWF"/>
+                        <outlet property="solveButton" destination="5KE-Vs-9WW" id="uGO-Yg-KnC"/>
+                        <outlet property="stepsTableView" destination="82W-NV-647" id="h0j-ER-3ou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
