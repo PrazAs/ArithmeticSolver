@@ -22,9 +22,6 @@ class ArithmeticSolverViewController: UIViewController {
     @IBOutlet
     private var stepsTableView: UITableView!
     
-    @IBOutlet
-    private var helpButton: UIBarButtonItem!
-    
     private let tableViewDataSource = TableViewDataSource()
     private let stepsTableViewSection = TableViewSection()
 
@@ -34,6 +31,10 @@ class ArithmeticSolverViewController: UIViewController {
     }
 
 }
+
+// MARK: - Private API
+
+// MARK: Setup
 
 private extension ArithmeticSolverViewController {
     func setup() {
@@ -45,6 +46,10 @@ private extension ArithmeticSolverViewController {
         // Bind `expressionTextField` text signal to `viewModel.expression`
         RAC(viewModel, "expression") <~ expressionTextField.rac_textSignal()
         
+        /**
+            When `solveButton` receives a touch up inside event,
+            solve the expression, and update the table view.
+         */
         solveButton
             .rac_signalForControlEvents(.TouchUpInside)
             .flattenMap { _ in
@@ -54,11 +59,6 @@ private extension ArithmeticSolverViewController {
                 self.stepsTableViewSection.objects = solution.steps
                 self.tableViewDataSource.reloadSections()
             }
-        
-        helpButton.rac_command = RACCommand { _ in
-            // TODO: Present the help view controller
-            return RACSignal.empty()
-        }
     }
     
     func setupTableView() {
@@ -80,4 +80,3 @@ private extension ArithmeticSolverViewController {
         tableViewDataSource.addSection(stepsTableViewSection)
     }
 }
-

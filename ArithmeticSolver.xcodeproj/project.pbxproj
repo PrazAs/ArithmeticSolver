@@ -29,6 +29,8 @@
 		7CF63B701B2F167300C0FCB2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B6F1B2F167300C0FCB2 /* StringExtensions.swift */; };
 		7CF63B731B2F1B1900C0FCB2 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B721B2F1B1900C0FCB2 /* StepCell.swift */; };
 		7CF63B751B2F1BBA00C0FCB2 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */; };
+		7CF63B781B2F27B500C0FCB2 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF63B771B2F27B500C0FCB2 /* HelpViewController.swift */; };
+		7CF63B7A1B2F29F800C0FCB2 /* HelpDocument.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF63B791B2F29F800C0FCB2 /* HelpDocument.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		7CF63B6F1B2F167300C0FCB2 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Extensions/Foundation/StringExtensions.swift; sourceTree = "<group>"; };
 		7CF63B721B2F1B1900C0FCB2 /* StepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCell.swift; path = Views/StepTableViewCell/StepCell.swift; sourceTree = "<group>"; };
 		7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StepCell.xib; path = Views/StepTableViewCell/StepCell.xib; sourceTree = "<group>"; };
+		7CF63B771B2F27B500C0FCB2 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = ViewControllers/Help/HelpViewController.swift; sourceTree = "<group>"; };
+		7CF63B791B2F29F800C0FCB2 /* HelpDocument.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = HelpDocument.rtf; path = ViewControllers/Help/HelpDocument.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 		7CC8001F1B2B9AC1002BB768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7CF63B761B2F27A600C0FCB2 /* Help */,
 				7CF63B691B2F0DA400C0FCB2 /* ArithmeticSolver */,
 			);
 			name = ViewControllers;
@@ -226,6 +231,7 @@
 		7CC8FFF91B2B9A68002BB768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7CF63B791B2F29F800C0FCB2 /* HelpDocument.rtf */,
 				7CC8FFFF1B2B9A68002BB768 /* Main.storyboard */,
 				7CC800021B2B9A68002BB768 /* Images.xcassets */,
 				7CC800041B2B9A68002BB768 /* LaunchScreen.xib */,
@@ -260,6 +266,14 @@
 				7CF63B741B2F1BBA00C0FCB2 /* StepCell.xib */,
 			);
 			name = StepCell;
+			sourceTree = "<group>";
+		};
+		7CF63B761B2F27A600C0FCB2 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				7CF63B771B2F27B500C0FCB2 /* HelpViewController.swift */,
+			);
+			name = Help;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF63B7A1B2F29F800C0FCB2 /* HelpDocument.rtf in Resources */,
 				7CC800011B2B9A68002BB768 /* Main.storyboard in Resources */,
 				7CF63B751B2F1BBA00C0FCB2 /* StepCell.xib in Resources */,
 				7CC800061B2B9A68002BB768 /* LaunchScreen.xib in Resources */,
@@ -376,6 +391,7 @@
 				7CC800321B2B9DEB002BB768 /* RACStreamExtensions.swift in Sources */,
 				7CC800371B2B9E79002BB768 /* Operation.swift in Sources */,
 				7CC800351B2B9E62002BB768 /* Operator.swift in Sources */,
+				7CF63B781B2F27B500C0FCB2 /* HelpViewController.swift in Sources */,
 				7CC800311B2B9DEB002BB768 /* RACSignalExtensions.swift in Sources */,
 				7CC800301B2B9DEB002BB768 /* RAC.swift in Sources */,
 				7CF63B6D1B2F0DA400C0FCB2 /* ArithmeticSolverViewModel.swift in Sources */,
