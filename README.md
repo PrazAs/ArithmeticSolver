@@ -22,3 +22,8 @@ $ carthage update
 - [ ] Add support for parsing decimal numbers.
 - [ ] Add support for parsing negative numbers.
 - [ ] Add support for solving algebraic expressions.
+- [ ] Error handling
+    - [x] Empty expression.
+    - [ ] Single digit expression.
+    - [ ] Single operator expression.
+    - [ ] Illegally formatted expression.
