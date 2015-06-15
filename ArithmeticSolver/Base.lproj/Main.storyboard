@@ -35,15 +35,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="82W-NV-647">
-                                <rect key="frame" x="0.0" y="150" width="600" height="450"/>
+                                <rect key="frame" x="0.0" y="149.5" width="600" height="406.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIA-1J-reP">
-                                <rect key="frame" x="16" y="121" width="63" height="21"/>
+                                <rect key="frame" x="16" y="121" width="63" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiV-wr-ejf">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Help" id="hmC-wM-VdI"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -53,17 +59,22 @@
                             <constraint firstItem="DIA-1J-reP" firstAttribute="top" secondItem="49b-pO-waf" secondAttribute="bottom" constant="28" id="Fbd-1v-Ioe"/>
                             <constraint firstItem="xPU-lW-Qkq" firstAttribute="leading" secondItem="DIA-1J-reP" secondAttribute="leading" id="H3P-Lc-4i6"/>
                             <constraint firstItem="xPU-lW-Qkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LJe-yt-ajR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="82W-NV-647" secondAttribute="bottom" id="MjT-DV-ENp"/>
                             <constraint firstAttribute="trailing" secondItem="82W-NV-647" secondAttribute="trailing" id="Qwg-Yv-kgd"/>
+                            <constraint firstItem="aiV-wr-ejf" firstAttribute="top" secondItem="82W-NV-647" secondAttribute="bottom" id="RYD-7i-JG7"/>
                             <constraint firstItem="82W-NV-647" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RhZ-J7-Ljw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aiV-wr-ejf" secondAttribute="bottom" id="S4j-3q-6Do"/>
+                            <constraint firstItem="aiV-wr-ejf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zw4-8j-TLJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aiV-wr-ejf" secondAttribute="trailing" id="hkV-Wt-AdG"/>
                             <constraint firstItem="49b-pO-waf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pC5-jt-IH6"/>
                             <constraint firstItem="49b-pO-waf" firstAttribute="top" secondItem="xPU-lW-Qkq" secondAttribute="bottom" constant="8" id="rdm-RQ-49N"/>
                             <constraint firstItem="5KE-Vs-9WW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="uoa-AU-Bv0"/>
                             <constraint firstItem="5KE-Vs-9WW" firstAttribute="leading" secondItem="49b-pO-waf" secondAttribute="trailing" constant="8" id="we8-h6-g2M"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
                         <outlet property="expressionTextField" destination="49b-pO-waf" id="1l1-Il-VWF"/>
+                        <outlet property="helpButton" destination="hmC-wM-VdI" id="yat-Bl-ta8"/>
                         <outlet property="solveButton" destination="5KE-Vs-9WW" id="uGO-Yg-KnC"/>
                         <outlet property="stepsTableView" destination="82W-NV-647" id="h0j-ER-3ou"/>
                     </connections>

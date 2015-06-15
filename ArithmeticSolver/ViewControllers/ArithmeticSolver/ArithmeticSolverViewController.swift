@@ -22,6 +22,9 @@ class ArithmeticSolverViewController: UIViewController {
     @IBOutlet
     private var stepsTableView: UITableView!
     
+    @IBOutlet
+    private var helpButton: UIBarButtonItem!
+    
     private let tableViewDataSource = TableViewDataSource()
     private let stepsTableViewSection = TableViewSection()
 
@@ -51,6 +54,11 @@ private extension ArithmeticSolverViewController {
                 self.stepsTableViewSection.objects = solution.steps
                 self.tableViewDataSource.reloadSections()
             }
+        
+        helpButton.rac_command = RACCommand { _ in
+            // TODO: Present the help view controller
+            return RACSignal.empty()
+        }
     }
     
     func setupTableView() {

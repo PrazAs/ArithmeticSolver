@@ -22,6 +22,9 @@ private func combineDigits(expression: String) -> [String] {
     
     // Iterate through each component
     for component in components {
+        // TODO: Parse negative numbers (if the component is a "-", and follows a non-digit)
+        // TODO: Parse decimal numbers (if the component is a ".", preceeded by some digit, and followed by some digit)
+        
         // If the component is a digit...
         if component.isDigit() {
             // ...add it to the number

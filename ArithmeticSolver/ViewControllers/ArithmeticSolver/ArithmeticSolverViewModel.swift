@@ -15,11 +15,21 @@ class ArithmeticSolverViewModel: NSObject {
     private let mathSolver = MathSolver()
     
     func solveExpressionSignal() -> RACSignal {
+        let expression = self.expression
+        
         return RACSignal.createSignal { subscriber in
-            let solution = self.mathSolver.solve(self.expression)
-            
-            subscriber.sendNext(solution)
-            subscriber.sendCompleted()
+            if !expression.isEmpty {
+                let solution = self.mathSolver.solve(expression)
+                
+                subscriber.sendNext(solution)
+                subscriber.sendCompleted()
+            } else {
+                let emptyExpressionError = NSError(domain: "com.Tabtor.ArithmeticSolver.ArithmeticSolverViewModel", code: -1, userInfo: [
+                    NSLocalizedDescriptionKey: "Expression is empty."
+                ])
+                
+                subscriber.sendError(emptyExpressionError)
+            }
             
             return nil
         }
